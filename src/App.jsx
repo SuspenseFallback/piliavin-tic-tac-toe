@@ -55,7 +55,8 @@ function App() {
     ["11 am - 3 pm", "3 pm - 7 pm", "7 am - 11 am", "7 pm - 11 pm"],
     ["New York Subway", "Chicago Subway", "Singapore Subway", "New York Buses"],
     ["7.5 minutes", "7 minutes", "6.5 minutes", "6 minutes"],
-    ["4", "3", "2", "1"][("2", "3", "1", "4")],
+    ["4", "3", "2", "1"],
+    ["2", "3", "1", "4"],
     ["2", "3", "1", "4"],
     [
       "Columbia University",
@@ -121,7 +122,7 @@ function App() {
   const answer_question = () => {
     set_answered(true);
 
-    if (answer == correct_answer) {
+    if (answer === correct_answer) {
       set_correct(true);
       if (x_turn) {
         addX(row, column);
